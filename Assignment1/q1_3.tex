@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{PART-3(Finding the Equation of the Regression Line)}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Given Data}
+
+The given data is as follows:
+
+\[
+\begin{array}{|c|c|}
+\hline
+x & y \\
+\hline
+3 & 15 \\
+6 & 30 \\
+10 & 55 \\
+15 & 85 \\
+18 & 100 \\
+\hline
+\end{array}
+\]
+
+The number of data points \( n = 5 \).
+
+\section*{Step 1: Calculate the Required Sums}
+
+We need to calculate the following sums:
+
+\[
+\sum x = 3 + 6 + 10 + 15 + 18 = 52
+\]
+
+\[
+\sum y = 15 + 30 + 55 + 85 + 100 = 285
+\]
+
+\[
+\sum xy = (3 \times 15) + (6 \times 30) + (10 \times 55) + (15 \times 85) + (18 \times 100) = 45 + 180 + 550 + 1275 + 1800 = 3850
+\]
+
+\[
+\sum x^2 = (3^2) + (6^2) + (10^2) + (15^2) + (18^2) = 9 + 36 + 100 + 225 + 324 = 694
+\]
+
+\section*{Step 2: Calculate the Slope (\( m \)) and Intercept (\( c \))}
+
+The slope \( m \) of the regression line is given by:
+
+\[
+m = \frac{n \sum xy - \sum x \sum y}{n \sum x^2 - (\sum x)^2}
+\]
+
+Substituting the values:
+
+\[
+m = \frac{5 \times 3850 - 52 \times 285}{5 \times 694 - 52^2}
+\]
+
+\[
+m = \frac{19250 - 14820}{3470 - 2704} = \frac{4430}{766} \approx 5.78
+\]
+
+The y-intercept \( c \) is calculated using the formula:
+
+\[
+c = \frac{\sum y - m \sum x}{n}
+\]
+
+Substituting the values:
+
+\[
+c = \frac{285 - 5.78 \times 52}{5} = \frac{285 - 300.56}{5} = \frac{-15.56}{5} \approx -3.11
+\]
+
+\section*{Step 3: The Equation of the Regression Line}
+
+Thus, the equation of the regression line is:
+
+\[
+y = 5.78x - 3.11
+\]
+
+\section*{Step 4: Using the Regression Line}
+
+To predict the value of \( y \) for a given \( x \), substitute the value of \( x \) into the regression line equation. For example, for \( x = 12 \):
+
+\[
+y = 5.78 \times 12 - 3.11 = 69.36 - 3.11 = 66.25
+\]
+
+Thus, the predicted value of \( y \) when \( x = 12 \) is approximately 66.25.
+
+\end{document}
